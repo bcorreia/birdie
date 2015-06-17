@@ -1,13 +1,18 @@
 {
   "name": "birdie.js",
   "version": "1.0.0",
-  "description": "",
-  "main": "gruntfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "A data-list attribute implementation for type-range input (pseudo polyfill)",
+  "main": "dist/birdie.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bcorreia/birdie.js.git"
   },
-  "author": "Bruno Correia <mail@bcorreia.com> (http://bcorreia.com/)",
-  "license": "ISC",
+  "author": {
+    "name": "Bruno Correia",
+    "email": "mail@bcorreia.com",
+    "url": "http://bcorreia.com"
+  },
+  "license": "MIT",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-banner": "^0.4.0",

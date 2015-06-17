@@ -1,12 +1,15 @@
 {
   "name": "birdie.js",
+  "description": "A data-list attribute implementation for type-range input (pseudo polyfill)",
   "version": "1.0.0",
   "authors": [
     "Bruno Correia <mail@bcorreia.com>"
   ],
-  "description": "Birdie.js, input type range with list implementation",
+  "main": [
+    "dist/birdie.js",
+    "dist/birdie.min.js"
+  ],
   "license": "MIT",
-  "homepage": "bcorreia.com",
   "ignore": [
     "**/.*",
     "node_modules",

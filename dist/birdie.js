@@ -1,4 +1,11 @@
-var Bird = (function() {
+/**
+ * birdie.js - version 1.0.0
+ *
+ * https://github.com/bcorreia/birdie.js.git
+ * Bruno Correia - mail@bcorreia.com
+ *
+ */
+var Birdie = (function() {
     'use strict';
 
     var forEach = function(list, callback) {
@@ -6,7 +13,7 @@ var Bird = (function() {
     }
 
     var defaults = {
-        selector: undefined, // class name
+        selector: "",
         enumerate: false
     };
 
@@ -45,7 +52,7 @@ var Bird = (function() {
         return extended;
     }
 
-    Bird = function(stage, options) {
+    Birdie = function(stage, options) {
         var settings = extend(defaults, options || {}),
             birds = stage.querySelectorAll(settings.selector);
 
@@ -73,5 +80,5 @@ var Bird = (function() {
         });
     }
 
-    return Bird;
+    return Birdie;
 }());

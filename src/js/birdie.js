@@ -1,4 +1,4 @@
-var Bird = (function() {
+var Birdie = (function() {
     'use strict';
 
     var forEach = function(list, callback) {
@@ -6,7 +6,7 @@ var Bird = (function() {
     }
 
     var defaults = {
-        selector: undefined, // class name
+        selector: "",
         enumerate: false
     };
 
@@ -45,7 +45,7 @@ var Bird = (function() {
         return extended;
     }
 
-    Bird = function(stage, options) {
+    Birdie = function(stage, options) {
         var settings = extend(defaults, options || {}),
             birds = stage.querySelectorAll(settings.selector);
 
@@ -73,5 +73,5 @@ var Bird = (function() {
         });
     }
 
-    return Bird;
+    return Birdie;
 }());
