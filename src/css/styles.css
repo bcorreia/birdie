@@ -1,0 +1,35 @@
+*, *:before, *:after                    { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+* :focus,
+* :active                               { outline: none !important; -moz-outline-style: none; }
+
+body                                    { font: normal normal 300 16px/1.6 'Roboto', Helvetica, Arial, Verdana, sans-serif; color: #2B303B; background:#C3D5D2; padding: 100px; }
+h1                                      { font: normal normal 100 4.236em/1.2 'Roboto', Helvetica, Arial, Verdana, sans-serif; color: #FFF; }
+h2                                      { font: normal normal 300 2.618em/1.2 'Roboto', Helvetica, Arial, Verdana, sans-serif; color: #A7BDB9; margin: 0; }
+
+form                                    { width: 620px; margin: 0 auto; }
+input[readonly="readonly"]              { background: transparent; border: none; width: 100%; display: block; font-size: 1.618em; font-weight: 100; padding: .375em 0 1.75em 0; color: #FFF; -moz-user-select: none; -webkit-user-select: none; }
+input[type="range"]                     { display: inline-block; }
+
+/* type range
+--------------------------------------------- */
+button::-moz-focus-inner,
+input::-moz-focus-inner                                 { border: none; padding: 0; }
+input::-moz-focus-outer                                 { border: 0; }
+
+input[type=range]                                       { -webkit-appearance: none; margin:0; width: 100%; }
+input[type=range]:focus                                 { outline: none; }
+
+input[type=range]::-webkit-slider-runnable-track        { background: #44859E; border:none; width: 100%; height: 8px; cursor: pointer; animate: .2s; border-radius: 2px; }
+input[type=range]::-webkit-slider-thumb                 { background: #2B5564; border:none; height: 20px; width: 20px; cursor: pointer; -webkit-appearance: none; border-radius: 50%; transform: translateY(-5px); }
+input[type=range]:focus::-webkit-slider-runnable-track  { background: #44859E; }
+
+input[type=range]::-moz-range-track                     { background: #44859E; border:none; width: 100%; height: 20px; cursor: pointer; animate: .2s; }
+input[type=range]::-moz-range-thumb                     { background: #2B5564; border:none; border-radius:0; height: 20px; width: 40px; cursor: pointer; }
+
+input[type=range]::-ms-track                            { background: transparent; border-color: transparent; width: 100%; height: 20px; cursor: pointer; animate: .5s; border-width: 40px 0; color: transparent; }
+input[type=range]::-ms-fill-lower                       { background: #44859E; border:none; }
+input[type=range]::-ms-fill-upper                       { background: #44859E; border:none; }
+input[type=range]::-ms-thumb                            { background: #2B5564; border: none; height: 20px; width: 40px; cursor: pointer; }
+
+input[type=range]:focus::-ms-fill-lower                 { background: #44859E; }
+input[type=range]:focus::-ms-fill-upper                 { background: #44859E; }

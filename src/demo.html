@@ -1,0 +1,29 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <title>Birdie</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,500' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="all" href="./css/normalize.css" />
+    <link rel="stylesheet" media="all" href="./css/styles.css" />
+</head>
+<body>
+    <form>
+        <h1>Slide to select birds</h1>
+
+        <h2>Southern birds</h2>
+        <input type="text" class="birds" name="southern-birds" readonly="readonly" data-list="Willet, Wandering tattler, Gray-tailed tattler, Spotted sandpiper, Terek sandpiper, Upland sandpiper, Little curlew, Whimbrel, Bristle-thighed curlew, Long-billed curlew"; />
+
+        <h2>Northern birds</h2>
+        <input type="text" class="birds" name="northern-birds" readonly="readonly" data-list="Blue-winged teal, Cinnamon teal, Northern shoveler, White-cheeked pintail, Northern pintail, Garganey, Baikal teal, Green-winged teal, Common teal Anas, Canvasback, Northern shoveler, White-cheeked pintail, Northern pintail, Garganey, Baikal teal, Green-winged teal, Canvasback, Redhead, Common pochard, Ring-necked duck, Tufted duck, Greater scaup"; />
+    </form>
+
+    <script src="./js/birdie.js"></script>
+    <script>
+        var birds = new Bird(document.querySelector('form'), {
+            selector: '.birds',
+            enumerate: true
+        });
+    </script>
+</body>
+</html>
