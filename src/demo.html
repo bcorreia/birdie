@@ -3,27 +3,43 @@
 <head>
     <meta charset="utf-8" />
     <title>Birdie</title>
+
+    <meta name="viewport" content="width=device-width" />
     <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,500' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" media="all" href="./css/normalize.css" />
     <link rel="stylesheet" media="all" href="./css/styles.css" />
 </head>
 <body>
     <form>
-        <h1>Slide to select birds</h1>
+        <h1>Slide to select</h1>
+        <p>A good substitute for inconvenient select menus</p>
 
-        <h2>Southern birds</h2>
-        <input type="text" class="birds" name="southern-birds" readonly="readonly" data-list="Willet, Wandering tattler, Gray-tailed tattler, Spotted sandpiper, Terek sandpiper, Upland sandpiper, Little curlew, Whimbrel, Bristle-thighed curlew, Long-billed curlew"; />
+        <h2>How old are you?</h2>
+        <input type="text" class="birdie" name="age" readonly="readonly" data-list="Under 12 years old, 12-17 years old, 18-24 years old, 25-34 years old, 35-44 years old, 45-54 years old, 55-64 years old, 65-74 years old, 75 years or older"; />
 
-        <h2>Northern birds</h2>
-        <input type="text" class="birds" name="northern-birds" readonly="readonly" data-list="Blue-winged teal, Cinnamon teal, Northern shoveler, White-cheeked pintail, Northern pintail, Garganey, Baikal teal, Green-winged teal, Common teal Anas, Canvasback, Northern shoveler, White-cheeked pintail, Northern pintail, Garganey, Baikal teal, Green-winged teal, Canvasback, Redhead, Common pochard, Ring-necked duck, Tufted duck, Greater scaup"; />
+        <h2>What is your favorite bird?</h2>
+        <input type="text" class="birdie" name="favorite-bird" readonly="readonly" data-list="Blue-winged teal, Cinnamon teal, Northern shoveler, White-cheeked pintail, Northern pintail, Garganey, Baikal teal, Green-winged teal, Common teal Anas, Canvasback, Northern shoveler, White-cheeked pintail, Northern pintail, Garganey, Baikal teal, Green-winged teal, Canvasback, Redhead, Common pochard, Ring-necked duck, Tufted duck, Greater scaup"; />
+
+        <input type="submit" />
+        <div class="results"><!-- results --></div>
     </form>
 
     <script src="./js/birdie.js"></script>
     <script>
         var birds = new Birdie(document.querySelector('form'), {
-            selector: '.birds',
-            enumerate: true
+            selector: '.birdie',
+            enumerate: false
         });
+
+        /* demo purpose only
+        --------------------------------------------- */
+        document.querySelector('form').onsubmit = function(event) {
+            event.preventDefault();
+            var results = this.querySelector(".results");
+            results.innerHTML = "";
+            results.insertAdjacentHTML('beforeend', '<p><strong>Age: </strong>'+ this.querySelector('[name="age"]').value +'</p>');
+            results.insertAdjacentHTML('beforeend', '<p><strong>Favorite Bird: </strong>'+ this.querySelector('[name="favorite-bird"]').value +'</p>');
+        }
     </script>
 </body>
 </html>
