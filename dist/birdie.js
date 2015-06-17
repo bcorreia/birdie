@@ -54,9 +54,9 @@ var Birdie = (function() {
 
     Birdie = function(stage, options) {
         var settings = extend(defaults, options || {}),
-            birds = stage.querySelectorAll(settings.selector);
+            el = stage.querySelectorAll(settings.selector);
 
-        forEach(birds, function(element) {
+        forEach(el, function(element) {
             var html, attributes,
                 range = document.createElement('input'),
                 list = element.getAttribute("data-list").split(",");
