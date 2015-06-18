@@ -2,12 +2,15 @@
 * :focus,
 * :active                               { outline: none !important; -moz-outline-style: none; }
 
-body                                    { font: normal normal 300 10px/1.6 'Roboto', Helvetica, Arial, Verdana, sans-serif; color: #2B303B; background:#BFD7D3; padding: 38px; }
+body                                    { font: normal normal 300 10px/1.6 'Roboto', Helvetica, Arial, Verdana, sans-serif; color: #2B303B; background:#9CC5BE; padding: 38px; }
 @media (min-width: 768px) {
-    body                                { padding: 100px; font-size: 16px; }
+    body                                { padding: 100px; font-size: 16px; background:#BFD7D3; }
 }
 h1                                      { font: normal normal 100 4.236em/1.2 'Roboto', Helvetica, Arial, Verdana, sans-serif; color: #FFF; margin: 0; }
-h2                                      { font: normal normal 300 2.618em/1.2 'Roboto', Helvetica, Arial, Verdana, sans-serif; color: #92AEA9; margin: 0; }
+h2                                      { font: normal normal 300 2.618em/1.2 'Roboto', Helvetica, Arial, Verdana, sans-serif; color:#859894; margin: 0; }
+@media (min-width: 768px) {
+    h2                                  { color: #92AEA9; }
+}
 
 form                                    { width: 100%; margin: 0 auto; }
 @media (min-width: 768px) {
