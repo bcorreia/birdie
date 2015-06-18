@@ -31,16 +31,16 @@ var birds = new Birdie(document.querySelector('form'), {
 | `enumerate` | Enumerate list output | `false` | `boolean`
 
 ### Example
-Add **data-list** attribute to input type-text elements. An input type-range will be inserted before each matched element.
+Add **data-list** attribute to input elements of type text. An input element of type range will be inserted before each match.
 ```HTML
-<input type="text" class="birds" name="birds" readonly data-list="…"; />
+<input type="text" class="foobar" name="birds" readonly data-list="…"; />
 <!-- readonly attribute is recommended -->
 ```
 
 `JS` The first argument should be the form, or a parent element.
 ```javascript
 var birds = new Birdie(document.querySelector('form'), {
-    selector: '.birds', // class name matching the input type-text element(s)
+    selector: '.foobar', // one or more CSS selectors separated by commas
     enumerate: true
 });
 ```
