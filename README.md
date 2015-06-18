@@ -3,8 +3,8 @@
 [![npm version](https://img.shields.io/npm/v/birdie.js.svg?style=flat)](https://www.npmjs.com/package/birdie.js)
 [![Build Status](https://travis-ci.org/bcorreia/birdie.js.svg?branch=master)](https://travis-ci.org/bcorreia/birdie.js)
 
-Data-list implementation for input of type `range`. *(pseudo polyfill)*<br />
-[**demo**](http://bcorreia.com/projects/birdie.js/src/demo.html)
+Data-list attr. implementation for input of type `range`. <br />
+[**Demo**](http://bcorreia.com/projects/birdie.js/src/demo.html)
 
 ---
 ## Getting Started
