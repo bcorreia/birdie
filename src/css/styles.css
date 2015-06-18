@@ -2,7 +2,7 @@
 * :focus,
 * :active                               { outline: none !important; -moz-outline-style: none; }
 
-body                                    { font: normal normal 300 14px/1.6 'Roboto', Helvetica, Arial, Verdana, sans-serif; color: #2B303B; background:#C3D5D2; padding: 16px; }
+body                                    { font: normal normal 300 10px/1.6 'Roboto', Helvetica, Arial, Verdana, sans-serif; color: #2B303B; background:#C3D5D2; padding: 38px; }
 @media (min-width: 768px) {
     body                                { padding: 100px; font-size: 16px; }
 }
@@ -16,7 +16,10 @@ form                                    { width: 100%; margin: 0 auto; }
 input[readonly="readonly"]              { background: transparent; border: none; width: 100%; display: block; font-size: 1.618em; font-weight: 100; padding: .375em 0 1.75em 0; color: #FFF; -moz-user-select: none; -webkit-user-select: none; }
 input[type="range"]                     { display: inline-block; }
 
-p                                       { color: #859894; margin: 0 0 .125em 0; }
+p                                       { font-size: 1.375em; color: #859894; margin: 0 0 .125em 0; }
+@media (min-width: 768px) {
+    p                                   { font-size: 1em; }
+}
 h1 + p                                  { margin: 0 0 2em 0; }
 p strong                                { font-weight: 500; }
 .results                                { padding:1em 0 0 0; }
@@ -51,5 +54,8 @@ input[type=range]:focus::-ms-fill-upper                 { background: #44859E; }
 
 /* submit button
 --------------------------------------------- */
-input[type="submit"]                                    { letter-spacing: 0.04em; background: #44859E; padding:8px 16px; color:#C3D5D2; font-family:'Helvetica Neue',sans-serif; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; border:none; transition: opacity .5s; }
+input[type="submit"]                                    { font-size: 1.375em; letter-spacing: 0.04em; background: #44859E; padding:8px 16px; color:#C3D5D2; font-family:'Helvetica Neue',sans-serif; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; border:none; transition: opacity .5s; }
 input[type="submit"]:hover                              { opacity: .75; }
+@media (min-width: 768px) {
+    input[type="submit"]                                { font-size: 1em; }
+}
