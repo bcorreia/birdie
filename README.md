@@ -3,7 +3,7 @@
 [![npm version](https://img.shields.io/npm/v/birdie.js.svg?style=flat)](https://www.npmjs.com/package/birdie.js)
 [![Build Status](https://travis-ci.org/bcorreia/birdie.js.svg?branch=master)](https://travis-ci.org/bcorreia/birdie.js)
 
-A data-list attribute implementation for type-range input. ( pseudo polyfill )<br />
+Data-list implementation for input of range type. *(pseudo polyfill)*<br />
 [**demo**](http://bcorreia.com/projects/birdie.js/src/demo.html)
 
 ---
@@ -47,4 +47,4 @@ var birds = new Birdie(document.querySelector('form'), {
 ---
 
 ## License
-This software is free to use under the [MIT license](https://github.com/bcorreia/panels.js/blob/master/license.md).
+This software is free to use under the [MIT license](https://github.com/bcorreia/birdie.js/blob/master/license.md).
